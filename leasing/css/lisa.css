@@ -1,0 +1,1826 @@
+/*,________________________
+//|.----------------------.|
+//||                      ||
+//||       ______         ||
+//||     .;;;;;;;;.       ||
+//||    /;;;;;;;;;;;\     ||
+//||   /;/`    `-;;;;; . .||
+//||   |;|__  __  \;;;|   ||
+//||.-.|;| e`/e`  |;;;|   ||
+//||   |;|  |     |;;;|'--||
+//||   |;|  '-    |;;;|   ||
+//||   |;;\ --'  /|;;;|   ||
+//||   |;;;;;---'\|;;;|   ||
+//||   |;;;;|     |;;;|   ||
+//||   |;;.-'     |;;;|   ||
+//||'--|/`        |;;;|--.||
+//||;;;;    .     ;;;;.\;;||
+//||;;;;;-.;_    /.-;;;;;;||
+//||;;;;;;;;;;;;;;;;;;;;;;||
+//||;;;;;;;;;;;;;;;;;;;;;;||
+//'------------------------'*/
+
+html,
+body,
+#page-content {
+  height: 100%;
+}
+
+body {
+  font-family: 'SF Text';
+  margin: 0;
+  padding: 0;
+  background-color: #101011;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/*  _ _       _     _
+ * | (_)     | |   | |
+ * | |_  __ _| |__ | |_
+ * | | |/ _` | '_ \| __|
+ * | | | (_| | | | | |_
+ * |_|_|\__, |_| |_|\__|
+ *       __/ |
+ *      |___/
+ *
+ * LIGHT THEME
+ * shared on all marketing pages
+ * for re-use on a light (white) background
+ */
+
+.hero-light {
+  font-family: 'SF Display';
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: -1px;
+  color: #242426;
+  margin: 0;
+}
+
+.h1-light {
+  font-family: 'SF Display';
+  font-size: 32px;
+  line-height: 1.5;
+  color: #242426;
+  margin: 0;
+  font-weight: 200;
+}
+
+.h2-light {
+  font-family: 'SF Display';
+  font-size: 24px;
+  line-height: 1.33;
+  color: #242426;
+  margin: 0;
+  font-weight: 200;
+}
+
+.h3-light {
+  font-family: 'SF Display';
+  font-size: 21px;
+  line-height: 1.33;
+  color: #242426;
+  margin: 0;
+}
+
+.h4-light {
+  font-family: 'SF Text';
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  color: #6d6c73;
+  margin: 0;
+}
+
+.h5-light {
+  font-family: 'SF Mono';
+  font-size: 10px;
+  color: #6d6c73;
+  letter-spacing: 0.38px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.intro-light {
+  font-family: 'SF Text';
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: left;
+  color: #6d6c73;
+  margin: 0;
+}
+
+.body-light {
+  font-family: 'SF Text';
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.57;
+  text-align: left;
+  color: #3d3c40;
+  margin: 0;
+}
+
+.small-light {
+  font-family: 'SF Text';
+  font-size: 12px;
+  line-height: 1.5;
+  color: #a5a3a8;
+  margin: 0;
+}
+
+/*      _            _
+ *     | |          | |
+ *   __| | __ _ _ __| | __
+ *  / _` |/ _` | '__| |/ /
+ * | (_| | (_| | |  |   <
+ *  \__,_|\__,_|_|  |_|\_\
+ *
+ *
+ * DARK THEME
+ * shared on all marketing pages
+ * for re-use on a dark (black) background
+ */
+
+.hero-dark {
+  font-family: 'SF Display';
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.33;
+  letter-spacing: -1px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.h1-dark {
+  font-family: 'SF Display';
+  font-size: 32px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 200;
+}
+
+.h2-dark {
+  font-family: 'SF Display';
+  font-size: 24px;
+  line-height: 1.33;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 200;
+}
+
+.h3-dark {
+  font-family: 'SF Display';
+  font-size: 21px;
+  line-height: 1.33;
+  color: #ffffff;
+  margin: 0;
+}
+
+.h4-dark {
+  font-family: 'SF Text';
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  color: #a4a3a8;
+  margin: 0;
+}
+
+.h5-dark {
+  font-family: 'SF Mono';
+  font-size: 10px;
+  color: #6d6c73;
+  letter-spacing: 0.38px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.intro-dark {
+  font-family: 'SF Text';
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: left;
+  color: #a4a3a8;
+  margin: 0;
+}
+
+.body-dark {
+  font-family: 'SF Text';
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.57;
+  text-align: left;
+  color: #6d6c73;
+  margin: 0;
+}
+
+.small-dark {
+  font-family: 'SF Text';
+  font-size: 12px;
+  line-height: 1.5;
+  color: #3d3c40;
+  margin: 0;
+}
+
+/* COMPONENTS
+ *
+ * shared on all marketing pages
+ */
+
+a {
+  color: #07b5e3;
+  text-decoration: none;
+  transition: color 0.2s, border-color 0.2s, background-color 0.2s, filter 0.2s;
+}
+
+a:hover {
+  color: #38c3e8;
+}
+
+h1.text-h1 {
+  font-family: 'SF Text';
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 8px 0px;
+}
+
+div.text-body {
+  text-align: left;
+  font-family: 'SF Text';
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  color: #a4a3a8;
+}
+
+span.text-smaller {
+  font-family: 'SF Text';
+  font-size: 12px;
+  line-height: 15px;
+  color: #a5a3a8;
+}
+
+/*
+ * #PAGE-NAV
+ *
+ * mobile navigation shared on all marketing pages
+ */
+
+#page-nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101011;
+}
+
+#page-nav #menu-close {
+  padding: 24px;
+  display: block;
+  text-align: right;
+}
+
+#page-nav p.menu-section-header {
+  text-align: left;
+  font-family: 'SF Mono';
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #6d6c73; /* midway */
+  margin: 40px 0px 10px 32px;
+}
+
+#page-nav a {
+  font-family: 'SF Display';
+  font-size: 24px;
+  line-height: 1.33;
+  text-align: left;
+  color: #ffffff; /* white */
+  display: block;
+  font-weight: 200;
+  padding: 6px 32px;
+}
+
+#page-nav .lisa-email {
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 32px;
+}
+
+#page-nav .link-button-hollow {
+  display: inline;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  color: #07b5e3; /* sky */
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: solid 1px #07b5e3;
+}
+
+.nav-pricing {
+  display: none;
+}
+
+.nav-jobs {
+  display: none;
+}
+
+.nav-team {
+  display: none;
+}
+
+.nav-lisa {
+  display: none;
+}
+
+.nav-menu {
+  font-family: 'SF Mono';
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+#menu-link {
+  display: block;
+}
+
+#page-content .dynasty-nav {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-shrink: 0; /* else menu wiggles around */
+}
+
+#page-content .nav-logo {
+  margin: 24px 24px 24px 32px;
+}
+
+#page-content .nav-links {
+  margin: 24px 24px 24px 16px;
+}
+
+/* MOBILE FIRST
+ *
+ * Mobile styles are simpler, so we style first
+ * as mobile. Responsive between 0-580px wide
+ */
+
+/*             _      _
+ *            (_)    (_)
+ *  _ __  _ __ _  ___ _ _ __   __ _
+ * | '_ \| '__| |/ __| | '_ \ / _` |
+ * | |_) | |  | | (__| | | | | (_| |
+ * | .__/|_|  |_|\___|_|_| |_|\__, |
+ * | |                         __/ |
+ * |_|                        |___/
+ *
+ * PRICING PAGE
+ * page-specific styles
+ * mobile viewport
+ */
+
+.pricing-hero {
+  width: 100%;
+  min-height: 375px;
+  background-image: url('img/pricing-strawberry-hero-bg.png');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center center;
+}
+
+.pricing-hero p.hero-dark {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 64px;
+}
+
+.pricing-process {
+  background-color: white;
+  background-image: linear-gradient(-180deg, #ffffff 0%, #f5f5f6 80%, #ffffff 100%);
+}
+
+.pricing-process-headline {
+  padding: 64px 48px 0px 48px;
+  text-align: left;
+}
+
+.pricing-process-headline.for-wide-screens {
+  display: none; /* hide desktop-formatted sibling */
+}
+
+.pricing-process-headline p.body-light {
+  margin-top: 12px;
+}
+
+.pricing-process-rate {
+  text-align: left;
+  padding: 32px 48px 0px 48px;
+}
+
+.pricing-process-rate span.hero-light {
+  font-size: 32px;
+}
+
+.pricing-process-rate span.hero-light span {
+  font-size: 24px; /* currency small caps */
+}
+
+.pricing-process-rate span.h3-light {
+  margin-top: 12px;
+}
+
+.pricing-process-animation {
+  height: 80px;
+  width: 120%;
+  position: relative;
+  left: -20%;
+  top: -98px;
+}
+
+.pricing-testimonials {
+  background-color: white;
+  padding: 0px 48px;
+}
+
+.pricing-testimonials .testimonial-source {
+  display: flex;
+  align-items: center;
+}
+
+.pricing-testimonials .testimonial-portrait {
+  border-radius: 48px;
+  background: #f5f5f6;
+  overflow: hidden;
+}
+
+.pricing-testimonials .testimonial-portrait img {
+  width: 100%;
+  object-position: center center;
+  object-fit: cover;
+}
+
+.pricing-testimonials .testimonial-byline {
+  padding-left: 12px;
+}
+
+.pricing-testimonials blockquote {
+  text-align: left;
+  border-left: 1px solid rgba(164, 163, 168, 0.25);
+  padding-left: 8px;
+}
+
+.pricing-testimonials .hero-testimonial blockquote {
+  margin-top: 16px;
+}
+
+.pricing-testimonials .sidekick-testimonial blockquote {
+  margin-top: 12px;
+}
+
+.pricing-testimonials blockquote.for-wide-screens {
+  display: none; /* hide desktop-formatted sibling */
+}
+
+.pricing-testimonials .hero-testimonial .testimonial-portrait {
+  width: 64px;
+  height: 64px;
+}
+
+.pricing-testimonials .sidekick-testimonial .testimonial-portrait {
+  width: 48px;
+  height: 48px;
+  font-family: 'SF Mono';
+  font-size: 16px;
+  line-height: 1.38;
+  text-align: center;
+  color: #a5a3a8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-testimonials .sidekick-testimonial {
+  margin-top: 48px;
+  text-align: left;
+}
+
+.pricing-CTA {
+  background-color: white;
+  padding: 96px 48px 144px 48px;
+}
+
+.pricing-CTA p.h2-light {
+  margin-top: 16px;
+}
+
+.pricing-CTA a.link-button-hollow {
+  display: inline-block;
+  margin-top: 24px;
+}
+
+/*  _
+ * | |
+ * | |_ ___  __ _ _ __ ___
+ * | __/ _ \/ _` | '_ ` _ \
+ * | ||  __/ (_| | | | | | |
+ *  \__\___|\__,_|_| |_| |_|
+ *
+ * TEAM PAGE
+ * page-specific styles
+ * mobile viewport
+ */
+
+.team-hero {
+  height: 100%;
+  min-height: 480px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.team-hero .dynasty-nav {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.team-hero .team-hero-video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.team-hero .video-player {
+  object-fit: cover;
+  object-position: 85% center;
+  width: 100%;
+  height: 100%;
+}
+
+.team-hero .team-hero-text {
+  position: absolute;
+  bottom: 32px;
+  left: 16px;
+  padding-right: 16px;
+  text-align: left;
+}
+
+.team-hero-text p.hero-dark {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: -0.9px;
+}
+
+.team-hero-text p.intro-dark {
+  margin-top: 16px;
+}
+
+.team-hero .gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: multiply;
+  background-image: linear-gradient(202deg, rgba(16, 16, 17, 0.1), rgba(0, 0, 0, 0) 15%, #15172b);
+  background-blend-mode: multiply;
+}
+
+.team-mission {
+  background-color: #101011;
+  position: relative;
+  height: 784px;
+}
+
+.team-mission .team-mission-intro {
+  position: absolute;
+  width: 100%;
+  height: 384px;
+  background-image: linear-gradient(to bottom, #101011, #070f10 78%, rgba(7, 15, 16, 0));
+  background-blend-mode: multiply;
+}
+
+.team-mission .team-mission-intro.for-wide-screens {
+  display: none; /* hide desktop-styled sibling */
+}
+
+.team-mission-intro h2.h2-dark {
+  margin: 96px 16px 0px 16px;
+  text-align: left;
+}
+
+.team-mission-intro p.body-dark {
+  margin: 12px 16px 0px 16px;
+  text-align: left;
+}
+
+.team-mission .team-mission-photo {
+  height: 600px;
+  position: absolute;
+  top: 240px;
+}
+
+.team-mission-photo img {
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.team-mission-photo .mission-photo-gradient-outro {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  background-image: linear-gradient(to bottom, rgba(7, 15, 16, 0), #101011);
+}
+
+.team-roster {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  background-color: #101011;
+  padding: 64px 16px 0px 16px;
+}
+
+.team-roster h5.h5-dark {
+  text-align: left;
+}
+
+.team-roster a.employee {
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  margin-top: 32px;
+}
+
+.team-roster .portrait {
+  width: 112px;
+  height: 112px;
+  min-width: 112px;
+  background-color: #242426;
+  border-radius: 64px;
+  overflow: hidden;
+}
+
+.team-roster .portrait img {
+  object-fit: cover;
+  object-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.team-roster .bio {
+  margin-left: 24px;
+  position: relative;
+  top: 6px; /* optical alignment */
+}
+
+.team-roster .byline {
+  text-align: left;
+}
+
+.team-roster span.intro-dark {
+  margin-right: 12px;
+}
+
+.team-roster p.body-dark {
+  margin-top: 4px;
+}
+
+.team-roster a.employee:hover {
+  filter: brightness(110%);
+}
+
+.team-roster a.employee:active {
+  filter: brightness(120%);
+}
+
+.team-roster .team-roster-employees,
+.team-roster .team-roster-investors {
+  margin-bottom: 64px;
+  width: 100%;
+  max-width: 376px;
+  margin: 0px auto 64px auto;
+}
+
+.team-roster .investor-roster {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.team-roster a.investor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12px;
+  border: solid 1px rgba(36, 36, 38, 0.5);
+  height: 96px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.team-roster a.investor .investor-logo {
+  height: 64px;
+  width: 156px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.team-roster .investor-logo img {
+  max-width: 100%;
+}
+
+.team-roster a.investor .investor-name {
+  margin-left: 21px;
+  margin-right: 8px;
+  text-align: left;
+}
+
+.team-roster a.investor:hover {
+  filter: brightness(110%);
+  border: solid 1px rgba(36, 36, 38, 0.8);
+}
+
+.team-roster a.investor:active {
+  filter: brightness(120%);
+  border: solid 1px rgba(36, 36, 38, 1);
+}
+
+.team-roster .investor-caption {
+  text-align: left;
+  margin-top: 24px;
+}
+
+.team-jobs {
+  background-color: #101011;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.team-jobs .team-jobs-intro {
+  margin: 32px 16px 0px 16px;
+  text-align: left;
+}
+
+.team-jobs .team-jobs-intro.for-wide-screens {
+  display: none;
+}
+
+.team-jobs .team-jobs-intro p.intro-dark {
+  margin-top: 8px;
+}
+
+.team-jobs .team-jobs-photo {
+  width: 100%;
+  height: 360px;
+}
+
+.team-jobs .team-jobs-photo img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/*  _
+ * | |
+ * | |__   ___  _ __ ___   ___
+ * | '_ \ / _ \| '_ ` _ \ / _ \
+ * | | | | (_) | | | | | |  __/
+ * |_| |_|\___/|_| |_| |_|\___|
+ *
+ * HOME PAGE
+ * page-specific styles
+ * mobile viewport
+ */
+
+/* TODO: re-enable the menu once we have a team page, etc */
+
+#page-content .dynasty-bg {
+  background-color: white;
+  overflow-x: hidden;
+  margin-bottom: 192px;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-content .dynasty-bg > * {
+  position: relative;
+}
+
+/* ... and push the svg into the background */
+#page-content .dynasty-bg-circles {
+  position: absolute;
+  top: 380px;
+  transform: translateY(-80%) translateX(-48%) scaleX(1.25);
+}
+
+.lisa-hero-desktop-bg {
+  display: none; /* hide desktop Lisa hero image */
+}
+
+#page-content .lisa-intro-header {
+  font-family: 'SF Mono';
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #6d6c73; /* midway */
+  margin: 0px 0px 0px 32px;
+  position: absolute;
+  top: 540px;
+}
+
+.dynasty-bg #menu-link {
+  position: relative;
+  top: 1px;
+}
+
+.dynasty-hero-wave {
+  height: 200px;
+}
+
+.dynasty-hero-headline {
+  font-family: 'SF Display';
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.17;
+  letter-spacing: -0.9px;
+  text-align: left;
+  color: #242426; /* charcoal */
+  margin: 0 32px;
+}
+
+.dynasty-hero-resman-logo {
+  display: inline-block;
+  margin-left: 6px;
+  margin-bottom: -1px;
+  padding-top: 8px;
+}
+
+.dynasty-hero-intro {
+  font-family: 'SF Display';
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #3d3d40; /* steel */
+  margin: 16px 32px 0px 32px;
+  position: absolute;
+  max-width: 800px;
+}
+
+.lisa-hero-mobile-bg {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.lisa-brand {
+  display: block;
+  margin: 64px auto 0px auto;
+}
+
+.lisa-intro-text {
+  font-family: 'SF Text';
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.71;
+  text-align: center;
+  color: #f5f5f6;
+  margin: 24px 16%;
+}
+
+.lisa-email {
+  margin: 32px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.link-button {
+  padding: 12px 24px;
+  border-radius: 4px;
+  background-color: #07b5e3;
+  font-family: 'SF Text';
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 0.92;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #101011;
+}
+
+.link-button:hover {
+  color: #111;
+  background-color: #38c3e8;
+}
+
+.link-button-hollow {
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid #07b5e3; /* sky */
+  color: #07b5e3;
+}
+
+.link-button-hollow:hover {
+  border-color: #38c3e8;
+  color: #38c3e8;
+  background: rgba(56, 195, 232, 0.1);
+}
+
+.CTA-helper {
+  font-family: 'SF Text';
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+  color: #3d3d40;
+  margin-left: 16px;
+}
+
+/* numbered ("01") features share these elements */
+
+.lisa-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.lisa-box-number {
+  padding-top: 64px;
+  font-family: 'SF Mono';
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  text-align: left;
+  color: #3d3d40;
+}
+
+.lisa-box-graphic.for-wide-screens {
+  display: none; /* hide HD imgs */
+}
+
+/* unique layouts for each feature section */
+
+.lisa-box-1 {
+  padding: 0px 16px 352px 16px;
+  background-image: url('../assets/lisa-box-1-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-clip: border-box;
+  background-size: cover;
+  background-origin: border-box;
+  position: relative; /* force the content down, */
+  top: 200px; /* so the parallelogram bg goes down */
+}
+
+.lisa-box-1 .lisa-box-number {
+  padding-top: 18%;
+}
+
+.lisa-box-1 .lisa-box-graphic {
+  position: relative; /* then bring the graphic */
+  top: -112px; /* above the fold */
+  margin-bottom: -112px;
+}
+
+.lisa-box-1 .text-body {
+  width: 80%;
+  max-width: 400px;
+}
+
+.lisa-box-2 {
+  padding: 0px 0px 367px 0px;
+  position: relative;
+  top: -50%;
+  text-align: center;
+  background-image: url('../assets/lisa-box-2-bg.svg');
+  background-repeat: no-repeat;
+  background-position: 48% 20%;
+  background-clip: border-box;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.lisa-box-2 .lisa-box-graphic {
+  position: relative; /* bring the graphic */
+  top: -48px; /* above the fold */
+  margin-bottom: -112px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.lisa-box-2 .lisa-box-graphic img {
+  width: 150%;
+  position: relative;
+  left: -50%;
+  top: -20%;
+}
+
+.lisa-box-2 .lisa-box-number {
+  text-align: center;
+  padding-top: 48px;
+  color: #a4a3a8;
+}
+
+.lisa-box-2 .text-h1 {
+  text-align: center;
+  color: #242426; /* charcoal */
+}
+
+.lisa-box-2 .text-body {
+  text-align: center;
+  padding: 0px 6%;
+  color: #3d3d40; /* steel */
+}
+
+.lisa-box-3 {
+  position: relative;
+  top: -2px;
+  background-color: white;
+  height: 488px;
+}
+
+.lisa-box-3 .lisa-box-graphic {
+  position: relative;
+  top: -270px;
+}
+
+.lisa-box-3 .lisa-box-number,
+.lisa-box-3 .lisa-box-text {
+  position: relative;
+  top: -360px;
+}
+
+.lisa-box-3 .lisa-box-number {
+  text-align: center;
+  color: #a4a3a8; /* silver */
+}
+
+.lisa-box-3 .text-h1 {
+  text-align: center;
+  color: #242426; /* charcoal */
+}
+
+.lisa-box-3 .text-body {
+  text-align: center;
+  color: #3d3d40; /* steel */
+  font-weight: 200;
+  margin: 0 6%;
+}
+
+.lisa-box-3 .text-body p {
+  margin: 12px 0px;
+}
+
+.lisa-box-3 .lisa-email {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+  padding-top: 6%;
+}
+
+.lisa-email a.link-button-hollow {
+  margin: 0 auto 12px auto;
+  font-size: 14px;
+}
+
+.lisa-sunset-outro {
+  width: 100%;
+  height: 448px;
+  background-image: linear-gradient(
+    to top,
+    #101011,
+    #1d2834 16%,
+    #315b7d 34%,
+    #8a91ac 51%,
+    #ebc9cd 67%,
+    #ffe8bc 77%,
+    #ffffff
+  );
+  position: relative;
+  top: -2px;
+}
+
+.lisa-footer-logo {
+  display: none;
+}
+
+.lisa-footer {
+  padding: 24px 32px 32px 32px;
+  background-color: #101011; /* ink */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 1px rgba(47, 44, 48, 0.5);
+}
+
+.lisa-footer-item {
+  margin: 0px 16px;
+  font-size: 12px;
+  color: #a4a3a8;
+  line-height: 18px;
+}
+
+.lisa-footer-item.copyright {
+  font-family: 'SF Text';
+  font-size: 12px;
+  color: #3d3d40; /* steel */
+  line-height: 18px;
+}
+
+a.lisa-footer-item:hover {
+  color: white;
+}
+
+/* DESKTOP
+ *
+ * Any screen over 600px wide
+ * iPads, small laptops
+ *
+ * Zeplin layout: https://zpl.io/amD0qJA
+ */
+@media screen and (min-width: 600px) {
+  body {
+    background-color: #242426; /* charcoal bg for Lisa hero */
+  }
+
+  /*
+   * #PAGE-NAV
+   *
+   * desktop navigation shared on all marketing pages
+   */
+
+  #menu-link {
+    display: none; /* hide button for mobile nav */
+  }
+
+  #page-content .nav-logo {
+    margin-top: 32px;
+  }
+
+  #page-content .nav-links {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .nav-links a:not(.link-button-hollow) {
+    margin: 0px 16px;
+    font-family: 'SF Display';
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #6d6c73; /* midway */
+    flex-shrink: 0;
+  }
+
+  .nav-pricing {
+    display: block; /* unhide desktop nav */
+  }
+
+  .nav-jobs {
+    display: block; /* unhide desktop nav */
+  }
+
+  .nav-team {
+    display: block; /* unhide desktop nav */
+  }
+
+  .nav-lisa {
+    display: block; /* unhide desktop nav */
+    margin-left: 32px;
+  }
+
+  /*             _      _
+   *            (_)    (_)
+   *  _ __  _ __ _  ___ _ _ __   __ _
+   * | '_ \| '__| |/ __| | '_ \ / _` |
+   * | |_) | |  | | (__| | | | | (_| |
+   * | .__/|_|  |_|\___|_|_| |_|\__, |
+   * | |                         __/ |
+   * |_|                        |___/
+   *
+   * PRICING PAGE
+   * page-specific styles
+   * desktop viewport
+   */
+
+  .pricing-hero-text p.hero-dark {
+    font-size: 48px;
+    margin-top: 48px;
+  }
+
+  .pricing-process {
+    max-height: 496px;
+    background-image: linear-gradient(-180deg, #ffffff 0%, #f5f5f6 70%, #ffffff 100%);
+  }
+
+  .pricing-process-headline:not(.for-wide-screens) {
+    display: none; /* hide mobile-formatted sibling */
+  }
+
+  .pricing-process-headline.for-wide-screens {
+    display: block;
+    padding-top: 96px;
+  }
+
+  .pricing-process-headline.for-wide-screens p {
+    text-align: center;
+  }
+
+  .pricing-process-animation {
+    height: 320px;
+    width: 100%;
+    left: 0%;
+    top: -240px;
+  }
+
+  .pricing-process-rate {
+    text-align: center;
+  }
+
+  .pricing-process-rate span.hero-light {
+    font-size: 48px;
+  }
+
+  .pricing-process-rate span.hero-light span {
+    font-size: 32px; /* currency small caps */
+  }
+
+  .pricing-process-rate span.h3-light {
+    font-size: 24px;
+    line-height: 1.33;
+    color: #6d6c73;
+  }
+
+  .pricing-testimonials .hero-testimonial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pricing-testimonials .hero-testimonial .testimonial-portrait {
+    height: 240px;
+    width: 240px;
+    border-radius: 128px;
+  }
+
+  .pricing-testimonials .hero-testimonial .testimonial-byline,
+  .pricing-testimonials blockquote:not(.for-wide-screens),
+  .pricing-testimonials .sidekick-testimonial .testimonial-source {
+    display: none; /* hide mobile-formatted content */
+  }
+
+  .pricing-testimonials .sidekick-testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+
+  .pricing-testimonials .sidekick-testimonial {
+    width: 30%;
+    margin-top: 32px;
+  }
+
+  .pricing-testimonials blockquote.for-wide-screens {
+    display: block;
+    border-left: none;
+    max-width: 32em;
+  }
+
+  .pricing-testimonials .sidekick-testimonial > blockquote {
+    max-width: 24em;
+  }
+
+  .pricing-testimonials .hero-testimonial blockquote {
+    padding: 0px 0px 0px 48px;
+  }
+
+  .pricing-testimonials .hero-testimonial cite {
+    margin-top: 16px;
+  }
+
+  .pricing-testimonials cite {
+    font-style: normal;
+    display: block;
+    margin-top: 8px;
+  }
+
+  .pricing-CTA {
+    padding-top: 96px;
+  }
+
+  /*  _
+   * | |
+   * | |_ ___  __ _ _ __ ___
+   * | __/ _ \/ _` | '_ ` _ \
+   * | ||  __/ (_| | | | | | |
+   *  \__\___|\__,_|_| |_| |_|
+   *
+   * TEAM PAGE
+   * page-specific styles
+   * desktop viewport
+   */
+
+  .team-hero .video-player {
+    object-position: 100% center;
+  }
+
+  .team-hero .team-hero-text {
+    left: 24px;
+    bottom: 64px;
+  }
+
+  .team-hero-text p.hero-dark {
+    font-size: 48px;
+    line-height: 1.33;
+    letter-spacing: -1px;
+  }
+
+  .team-hero-text p.intro-dark {
+    margin-top: 6px;
+    max-width: 384px;
+  }
+
+  .team-mission .team-mission-intro:not(.for-wide-screens) {
+    display: none;
+  }
+
+  .team-mission .team-mission-intro.for-wide-screens {
+    display: block;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .team-mission-intro h1.h1-dark {
+    padding-top: 112px;
+  }
+
+  .team-mission-intro p.intro-dark {
+    text-align: center;
+    max-width: 640px;
+    margin: 12px auto 0px auto;
+  }
+
+  .team-roster {
+    padding-top: 96px;
+    justify-content: space-evenly;
+  }
+
+  .team-roster .team-roster-employees,
+  .team-roster .team-roster-investors {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .team-jobs .team-jobs-intro:not(.for-wide-screens) {
+    display: none;
+  }
+  .team-jobs .team-jobs-intro.for-wide-screens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin: 80px auto 0px auto;
+    padding: 0px 16px;
+  }
+
+  .team-jobs .team-jobs-intro.for-wide-screens h1 {
+    margin-right: 16px;
+  }
+
+  /*  _
+   * | |
+   * | |__   ___  _ __ ___   ___
+   * | '_ \ / _ \| '_ ` _ \ / _ \
+   * | | | | (_) | | | | | |  __/
+   * |_| |_|\___/|_| |_| |_|\___|
+   *
+   * HOME PAGE
+   * page-specific styles
+   * desktop viewport
+   */
+
+  /* Dynasty hero */
+
+  .dynasty-hero-wave {
+    order: 3; /* move wave below hero text */
+    margin-top: 32px;
+  }
+
+  #page-content .dynasty-bg-circles {
+    transform: translateY(-64%) translateX(-48%) scaleX(2.5) rotate(16deg);
+  }
+
+  #page-content .dynasty-hero-headline {
+    margin-top: 56px;
+  }
+
+  #page-content .lisa-intro-header {
+    top: 680px;
+  }
+
+  #page-content .dynasty-bg {
+    margin-bottom: 268px;
+  }
+
+  /* Lisa hero */
+
+  .lisa-hero-mobile-bg {
+    display: none; /* hide mobile Lisa hero */
+  }
+
+  .lisa-hero-desktop-bg {
+    display: block; /* show desktop Lisa hero */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  .lisa-hero-desktop-bg .prospect-chats {
+    position: absolute;
+    top: -180px;
+    left: 36%;
+  }
+
+  #page-content .lisa-brand {
+    padding-top: 540px;
+    width: 118px;
+    height: 183px;
+  }
+
+  #page-content .lisa-intro-text {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.75;
+    min-width: 280px;
+    max-width: 420px;
+    width: 32%;
+    margin: 48px auto 0px auto;
+    text-align: center;
+  }
+
+  .lisa-body .lisa-email {
+    padding-top: 48px;
+  }
+
+  .lisa-body .link-button {
+    padding: 24px 48px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0.89;
+  }
+
+  .lisa-body .CTA-helper {
+    font-family: 'SF Text';
+    font-size: 14px;
+    line-height: 1.62;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #6d6c73;
+    font-weight: 300;
+    margin-left: 24px;
+  }
+
+  /* Lisa body — common to all boxes */
+
+  .lisa-box-graphic.for-wide-screens {
+    display: block; /* show big img to wide screens */
+  }
+
+  .lisa-box-graphic:not(.for-wide-screens) {
+    display: none; /* hide mobile-sized img */
+  }
+
+  .lisa-box {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .lisa-box .lisa-box-number {
+    font-size: 24px;
+    line-height: 1.33;
+    text-align: right;
+    color: #6d6c73; /* midway */
+    border-top: 1px solid #6d6c73;
+    padding-top: 16px;
+    min-width: 64px;
+    margin-right: 48px;
+  }
+
+  .lisa-box .lisa-box-text {
+    border-top: 1px solid #6d6c73;
+    line-height: 1.33;
+    font-weight: 200;
+    padding: 16px 0px;
+  }
+
+  h1.text-h1 {
+    font-family: 'SF Display';
+    font-size: 24px;
+    line-height: 1.33;
+    margin: 0 0 16px 0;
+    font-weight: 200;
+    letter-spacing: 0px;
+  }
+
+  .lisa-box-text .text-body {
+    font-size: 16px;
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+    line-height: 1.62;
+  }
+
+  /* layout for each box */
+
+  .lisa-box-1 {
+    padding-top: 6%;
+  }
+
+  .lisa-box-1 .lisa-box-graphic {
+    width: 100%;
+    padding-bottom: 32px;
+  }
+
+  .lisa-box-2 {
+    background-position: 75% 20%;
+    width: 100%;
+    padding-right: 16px;
+  }
+
+  .lisa-box-2 .lisa-box-text {
+    margin: 0px 16px 96px 0px;
+  }
+
+  .lisa-box-2 .text-h1 {
+    color: white;
+    text-align: left;
+  }
+
+  .lisa-box-2 .lisa-box-text .text-body {
+    color: #a5a3a8; /* silver */
+    padding: 0;
+    text-align: left;
+  }
+
+  .lisa-box-2 .lisa-box-graphic {
+    width: 100%;
+    display: block;
+    height: 400px;
+    padding-right: 2%;
+    order: 2;
+    left: -300px;
+    overflow: visible;
+  }
+
+  .lisa-box-2 .lisa-box-graphic img {
+    width: unset;
+    left: unset;
+    top: unset;
+  }
+
+  .lisa-box-3 {
+    height: 720px;
+  }
+
+  .lisa-box-3 .lisa-box-graphic {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 160px;
+  }
+
+  .lisa-box-3 .text-h1,
+  .lisa-box-3 .text-body {
+    text-align: left;
+  }
+
+  .lisa-box-3 .lisa-box-text {
+    margin-right: 8%;
+    border-color: rgba(164, 163, 168, 0.5);
+  }
+
+  .lisa-box-3 .lisa-box-number {
+    border-color: rgba(164, 163, 168, 0.5);
+  }
+
+  .lisa-box-3 .text-body {
+    margin: 0;
+    color: #6d6c73; /* midway */
+  }
+
+  .lisa-box-3 a.link-button-hollow {
+    font-size: 16px;
+    padding: 18px 32px;
+    font-weight: 400;
+    min-width: 200px;
+    margin: 0 24px 0 0;
+  }
+
+  .lisa-box-3 .lisa-email {
+    padding: 16px 0px;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* footer */
+
+  .lisa-footer {
+    padding: 64px 64px 128px 64px;
+    background-color: #101011; /* ink */
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+  }
+
+  .lisa-footer-logo {
+    display: unset;
+    text-align: left;
+  }
+
+  .lisa-footer-item {
+    margin-left: 48px;
+    font-size: 12px;
+  }
+
+  .lisa-footer-logo {
+    flex: 1;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+}
+
+/* HIGH DEFINITION
+ *
+ * Screens over 960px wide
+ * TVs, projectors, fancy desktops
+ */
+@media screen and (min-width: 960px) {
+  /*             _      _
+   *            (_)    (_)
+   *  _ __  _ __ _  ___ _ _ __   __ _
+   * | '_ \| '__| |/ __| | '_ \ / _` |
+   * | |_) | |  | | (__| | | | | (_| |
+   * | .__/|_|  |_|\___|_|_| |_|\__, |
+   * | |                         __/ |
+   * |_|                        |___/
+   *
+   * PRICING PAGE
+   * page-specific styles
+   * desktop viewport
+   */
+
+  .pricing-hero {
+    background-position: 50% 65%;
+  }
+
+  .pricing-process-headline.for-wide-screens {
+    padding-top: 112px;
+  }
+
+  .pricing-testimonials .sidekick-testimonials {
+    padding-top: 1%;
+  }
+
+  /*  _
+   * | |
+   * | |_ ___  __ _ _ __ ___
+   * | __/ _ \/ _` | '_ ` _ \
+   * | ||  __/ (_| | | | | | |
+   *  \__\___|\__,_|_| |_| |_|
+   *
+   * TEAM PAGE
+   * page-specific styles
+   * desktop viewport
+   */
+
+  .team-hero .team-hero-text {
+    left: 32px;
+    bottom: 96px;
+  }
+
+  /*  _
+   * | |
+   * | |__   ___  _ __ ___   ___
+   * | '_ \ / _ \| '_ ` _ \ / _ \
+   * | | | | (_) | | | | | |  __/
+   * |_| |_|\___/|_| |_| |_|\___|
+   *
+   * HOME PAGE
+   * page-specific styles
+   * HD desktop viewport
+   */
+
+  /* Dynasty hero */
+
+  #page-content .dynasty-bg-circles {
+    transform: translateY(-64%) translateX(-48%) scaleX(5) rotate(16deg);
+  }
+
+  #page-content .dynasty-hero-headline {
+    margin-top: 96px;
+  }
+
+  /* Lisa body — common to all boxes */
+  .lisa-box {
+    flex-wrap: nowrap;
+  }
+
+  /* layout for each box */
+
+  .lisa-box-1 {
+    padding-top: 148px;
+  }
+
+  .lisa-box-1 .lisa-box-number {
+    order: 0;
+  }
+
+  .lisa-box-1 .lisa-box-text {
+    order: 1;
+    margin-right: 96px;
+  }
+
+  .lisa-box-1 .lisa-box-graphic {
+    order: 2;
+    width: unset; /* relax into one row */
+  }
+
+  .lisa-box-2 {
+    flex-wrap: nowrap; /* relax into one row */
+  }
+
+  .lisa-box-2 .lisa-box-graphic {
+    order: 0;
+    left: -400px; /* push img farther left */
+    margin-right: -48%; /* pull text closer on right */
+  }
+
+  .lisa-box-3 {
+    padding: 8% 0 0 24%;
+    height: 180px;
+  }
+
+  .lisa-box-3 .lisa-box-graphic {
+    order: 2;
+    width: unset;
+    top: -360px;
+  }
+}
+
+/* ULTRA HD - 4K
+ *
+ * Screens over 1440px wide
+ * HDTVs, new 4k screens
+ */
+@media screen and (min-width: 1440px) {
+  /*  _
+   * | |
+   * | |__   ___  _ __ ___   ___
+   * | '_ \ / _ \| '_ ` _ \ / _ \
+   * | | | | (_) | | | | | |  __/
+   * |_| |_|\___/|_| |_| |_|\___|
+   *
+   * HOME PAGE
+   * page-specific styles
+   * Ultra HD / 4K viewport
+   */
+
+  /* Dynasty hero */
+
+  #page-content .dynasty-bg-circles {
+    transform: translateY(-64%) translateX(-48%) scaleX(7) rotate(16deg);
+  }
+}
